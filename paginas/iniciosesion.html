@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+ <TITLE>Perfil Inicio</TITLE>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="icon" href="proyecto/woman-bag.png" type="image/x-icon">
+<meta charset="utf-8">
+ <style>
+ @charset "utf-8";
+nav{
+   display:grid;
+   display: flex;
+   flex-direction: row;
+   gap: 15%;
+   grid-template-columns: 1fr auto;
+    align-items: center;
+    background: #ADE2EB;
+    font-family: "Roboto mono", monospace;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 9999;
+    }
+nav .logo{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 80px;
+    margin: 10px 50px;
+    color: #0F2C3F;
+    cursor: pointer;
+    }
+nav .barnav{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    margin-right: 20px;
+    }
+nav .barnav div{
+    padding: 53px 50px;
+    }
+nav .barnav div:hover{
+    cursor: pointer;
+    background:#058C7C;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #eafaf1;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(229, 245, 250 );
+    }
+
+    .perfil-container {
+      max-width: 1300px;
+      height: 450px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      margin-top: 10%;
+    }
+
+    .perfil-header {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .perfil-header img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #058C7C;
+
+    }
+
+    .perfil-info h2 {
+      margin: 0;
+      color: #058C7C;
+    }
+
+    .perfil-info p {
+      margin: 4px 0;
+      color: #555;
+    }
+
+     .perfil-datos-cupon {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 10px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+
+    .perfil-datos {
+      margin-top: 30px;
+    }
+
+    .perfil-datos h3 {
+      color: #225b21;
+      margin-bottom: 10px;
+    }
+
+    .perfil-datos ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .perfil-datos li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      color: #333;
+    }
+
+     .cupon {
+      flex: 1;
+      max-width: 400px;
+      margin-right: 15%;
+    }
+
+    .cupon img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+ <nav>
+  <font color="#225b21"><div class="logo" onclick="location.href = 'Bolsa3.html'">EcoHilo</div></font>
+  <font color="#000000"><div class="barnav">
+     <div onclick="location.href = 'Conocenos.html #inicio' ">Conócenos</div>
+     <div onclick="location.href = 'http://localhost/ecoHilo/Productos.html#'">Productos</div>
+     <div onclick="location.href = 'contacto.html'">Contacto</div>
+  </div></font>
+  <div class="imageness">
+    <img src="proyecto/user.png" width="25px">
+    <img src="proyecto/heart.png" width="25px">
+    <img src="proyecto/shopping-bag.png" width="25px">
+  </div>
+</nav><br> 
+
+<div class="perfil-container">
+  <div class="perfil-header">
+    <img src="proyecto/usuario.jpg" alt="Foto de perfil">
+    <div class="perfil-info">
+      <h2>Bienvenido, Vinnie</h2>
+      <p>ID de usuario: <strong>USR00123</strong></p>
+      <p>Correo: vinnie@email.com</p>
+    </div>
+  </div>
+
+  <div class="perfil-datos-cupon">
+    <div class="perfil-datos">
+      <h3>Información básica</h3>
+      <ul>
+        <li>Última compra: 12 de junio de 2025</li>
+        <li>Método de pago favorito: Tarjeta Visa</li>
+        <li>Dirección: Av. Siempre Viva #123, CDMX</li>
+        <li>Miembro desde: 2023</li>
+      </ul>
+    </div>
+    <div class="cupon">
+      <img src="proyecto/cupondesc.jpeg" alt="Cupón de descuento">
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
